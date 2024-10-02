@@ -17,7 +17,7 @@ Employees: Maintains employee details including name, hire date, department, and
 Table Definitions:
 sql
 Copy code
-CREATE TABLE Customers (
+'''CREATE TABLE Customers (
     customer_id INT PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
@@ -65,7 +65,7 @@ CREATE TABLE Employees (
     hire_date DATE,
     department VARCHAR(50),
     salary DECIMAL(10, 2)
-);
+);'''
 Data Insertion
 Data has been inserted into the tables to represent a sample of customers, products, orders, and employees. The following commands populate the tables:
 
