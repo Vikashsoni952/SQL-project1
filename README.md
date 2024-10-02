@@ -1,34 +1,40 @@
-#SQL Project: Company Database
+**SQL Project: Company Database**
 
 
 
-Project Overview
+**Project Overview**
+
 This project simulates a company's database that stores information about customers, products, orders, employees, and order items. It includes SQL queries for data analysis and business insights such as total revenue, order details, customer behavior, and employee salary analysis. The project showcases how to manage and analyze structured data using SQL.
 
 Database Schema
 The project consists of five tables:
 
-Customers: Stores customer details such as name, contact info, and join date.
+**Customers: Stores customer details such as name, contact info, and join date.**
+
+'''sql
+    CREATE TABLE Customers (
+        customer_id INT PRIMARY KEY,
+        first_name VARCHAR(50),
+        last_name VARCHAR(50),
+        email VARCHAR(100),
+        phone VARCHAR(15),
+        address VARCHAR(255),
+        city VARCHAR(50),
+        state VARCHAR(50),
+        zip_code VARCHAR(10),
+        join_date DATE
+    );
+'''
+
 Products: Contains product details including name, category, price, and stock quantity.
 Orders: Records order details including order date, customer ID, and total amount.
 Order_Items: Tracks the products ordered, their quantities, and item prices.
-Employees: Maintains employee details including name, hire date, department, and salary.
+**Employees: Maintains employee details including name, hire date, department, and salary.**
 
 Table Definitions:
 sql
 Copy code
-'''CREATE TABLE Customers (
-    customer_id INT PRIMARY KEY,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
-    email VARCHAR(100),
-    phone VARCHAR(15),
-    address VARCHAR(255),
-    city VARCHAR(50),
-    state VARCHAR(50),
-    zip_code VARCHAR(10),
-    join_date DATE
-);
+
 
 CREATE TABLE Products (
     product_id INT PRIMARY KEY,
@@ -65,7 +71,7 @@ CREATE TABLE Employees (
     hire_date DATE,
     department VARCHAR(50),
     salary DECIMAL(10, 2)
-);'''
+);"""
 Data Insertion
 Data has been inserted into the tables to represent a sample of customers, products, orders, and employees. The following commands populate the tables:
 
