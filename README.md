@@ -1,4 +1,7 @@
 #SQL Project: Company Database
+
+
+
 Project Overview
 This project simulates a company's database that stores information about customers, products, orders, employees, and order items. It includes SQL queries for data analysis and business insights such as total revenue, order details, customer behavior, and employee salary analysis. The project showcases how to manage and analyze structured data using SQL.
 
@@ -10,6 +13,7 @@ Products: Contains product details including name, category, price, and stock qu
 Orders: Records order details including order date, customer ID, and total amount.
 Order_Items: Tracks the products ordered, their quantities, and item prices.
 Employees: Maintains employee details including name, hire date, department, and salary.
+
 Table Definitions:
 sql
 Copy code
